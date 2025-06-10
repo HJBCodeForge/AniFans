@@ -60,12 +60,12 @@ document.getElementById('searchForm').addEventListener('submit', function(e) {
             })
             .catch(error => {
                 console.error('Error fetching quote:', error);
-                errorDiv.innerText = 'Error fetching quote.';
+                errorDiv.innerText = 'Oops! no quote found.';
             });
           }
         })
         .catch(error => {
           console.error('Error fetching data:', error);
-          errorDiv.innerText = 'There was an error fetching the data.';
+          errorDiv.innerText = 'Are you sure that character exists?';
         });
 });
